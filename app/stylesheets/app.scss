@@ -16,17 +16,22 @@ body.landing {
 
 	.hero-content {
     background: #2F1D57;
-    padding: 100px;
+    padding: 100px 0;
   }
  
 	.hero-content h1 {
     font-size: 70px;
     margin-bottom: 50px;
     font-weight: 300;
+    color: white;
+  }
+
+  .hero-content h3 {
+    color: white;
   }
 
 .selling-points {
-    padding: 100px;
+    padding: 100px 0;
   }
  
   .selling-points .point {
@@ -41,14 +46,69 @@ body.landing {
     margin-bottom: 20px;
     text-align: center;
     height: 85px;
+    color: white;
   }
  
   .selling-points .point p {
     font-size: 14px;
+    color: white;
   }
 
-  .nav-bar {
-    background: #2c1231;
-    height: 90px;
-    padding: 0 100px;
+ body.landing .navbar {
+    margin-bottom: 0;
   }
+
+  .player-header-nav {
+   background-color: rgba(123, 70, 163, .9);
+ }
+
+ .album-header-container {
+   margin-top: 55px;
+   margin-bottom: 40px;
+ }
+ 
+ // This styles the right side of our Album Header
+ .album-header-information {
+   // Pushes the album information down and makes sure there's sufficient space at the bottom of the page
+   margin-top: 45px;
+   margin-bottom: 20px;
+
+ }
+ 
+ .album-header-information h3, .album-header-information h4, .album-header-information h5 {
+   // Modifying the line height allows us to increase the spacing above and
+   // below the content. Another way of achieving the same effect would be to
+   // set a margin-top and margin-bottom for each of these classes
+   line-height: 150%;
+ }
+ 
+ .album-header-information h3 {
+   font-size: 48px;
+   font-weight: 300;
+   color: white;
+ }
+ 
+ .album-header-information h4 {
+   font-size: 24px;
+   font-weight: 700;
+   color: white;
+ }
+ 
+ .album-header-information h5 {
+   font-size: 16px;
+   font-weight: 500;
+   color: white;
+ }
+ 
+ // This styles our Song Listing
+ .table.album-song-listing {
+   // Override the font for the entire table.
+   font-weight: 300;
+   color: white;
+ }
+ 
+   // Override the defaults that Bootstrap sets.
+ .table.album-song-listing  td {
+   padding: 20px;
+   border-top: 1px solid rgba(255, 255, 255, .4);
+ }
