@@ -1,12 +1,12 @@
 $(document).ready(function() { 
     $('.hero-content h3').click(function(){
       subText = $(this).text();
-       $(this).text(subText + "!");
+       $(this).text(subText + "! ");
     });
  
    var onHoverAction = function(event) {
      console.log('Hover action triggered.');
-     $(this).animate({'margin-top': '10px'});
+     $(this).animate({'margin-top': '17px'});
    };
  
    var offHoverAction = function(event) {
