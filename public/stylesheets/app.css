@@ -105,5 +105,10 @@ body.landing .navbar {
 .collection-album-container img {
   max-width: 100%; }
 
+@media (max-width: 321px) {
+  .album-image {
+    width: 320px;
+    height: 320px; } }
+
 
 /*# sourceMappingURL=app.css.map*/

@@ -1,7 +1,7 @@
  var buildAlbumThumbnail = function() {
     var template =
-        '<div class="collection-album-container col-sm-1 col-md-2">'
-      + '  <img src="/images/album-placeholder.png"/>'
+        '<div class="collection-album-container col-xs-12 col-md-2">'
+      + '  <img class="img-responsive album-image" src="/images/album-placeholder.png"/>'
       + '  <div class="caption album-collection-info">'
       + '    <p>'
       + '      <a class="album-name" href="/album.html"> Album Name </a>'
