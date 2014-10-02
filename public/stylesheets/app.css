@@ -38,18 +38,22 @@
 
 .album-header-information h3 {
   font-size: 48px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: white; }
 
 .album-header-information h4 {
   font-size: 24px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: white; }
 
 .album-header-information h5 {
   font-size: 16px;
-  font-weight: 500; }
+  font-weight: 500;
+  color: white; }
 
 .table.album-song-listing {
-  font-weight: 300; }
+  font-weight: 300;
+  color: white; }
 
 .table.album-song-listing td {
   padding: 20px;
