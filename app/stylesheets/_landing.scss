@@ -1,3 +1,7 @@
+  
+
+
+
   .hero-content {
     background-color: #2F1D57;
     padding: 100px 0;
@@ -28,4 +32,100 @@
   .selling-points .point p {
     font-size: 14px;
     color: white;
+    text-align: center;
   }
+.hidden {
+    opacity: 0;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    // transform: scale(0);
+    opacity: 0;   
+  }
+  100% {
+    // transform: scale(1);
+    opacity: 1; 
+  }
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 400px;
+  height: 400px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  // backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+ 
+.slideRight{
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight; 
+
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out; 
+  -webkit-animation-timing-function: ease-in-out;   
+
+  visibility: visible !important; 
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-200%);
+  }
+  50%{
+    -webkit-transform: translateX(8%);
+  }
+  80%{
+    -webkit-transform: translateX(-4%);
+  }
+  95%{
+    -webkit-transform: translateX(4%);
+  }     
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+

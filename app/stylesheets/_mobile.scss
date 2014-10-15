@@ -1,0 +1,140 @@
+@media screen and (max-width: 768px) {
+
+  /* Landing Page and Global Styles */
+  .player-header-nav.navbar {
+    .navbar-nav {
+      li {
+        text-align: center;
+      }
+    }
+    .hero-content {
+      h1, h3  {
+        text-align: center;
+      }
+    }
+    .selling-points {
+      padding: 0;
+      .point {
+        padding: 3em 0.75em;
+        h5 {
+          height: 2.25em;
+        }
+        p {
+          text-align: center;
+          font-size: 1.25em;
+        }
+      }
+    }
+    .landing-album-list {
+      /* Example class added to style the album covers for mobile */
+      .album-cover {
+        position: relative;
+        left: calc(50% - 200px);
+      }
+    }
+  }
+
+  /* Collection View */
+
+   .collection-album-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; /* Width of the album image. */
+    height: 400px;
+    img{
+      width: 100%; /* Width of the album image. */
+    height: 100%;
+
+    }
+  }
+    .collection-album-image-container {
+    img{
+      width: 100%; /* Width of the album image. */
+    height: 100%;
+  }
+}
+img.image {
+  width: 100%; /* Width of the album image. */
+    height: 100%;
+  
+}
+
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 100;
+ 
+    a, a:hover {
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .left-controls {
+      width: 20%;
+
+    }
+ 
+    .right-controls {
+      width: 25%;
+      
+    }
+ 
+    .play-controls {
+      a {
+        font-size: 20px;
+        margin-right:3px;
+        
+      }
+ 
+      .previous {
+        margin-right: 30px;
+      }
+ 
+      .play-pause {
+        margin-right: 3px;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+    }
+ }
+.slideRight{
+  animation-name: slideRight;
+  -webkit-animation-name: slideRight; 
+
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-in-out; 
+  -webkit-animation-timing-function: ease-in-out;   
+
+  visibility: visible !important; 
+}
+
+@-webkit-keyframes slideRight {
+  0% {
+    -webkit-transform: translateX(-200%);
+  }
+  50%{
+    -webkit-transform: translateX(8%);
+  }
+  80%{
+    -webkit-transform: translateX(-4%);
+  }
+  95%{
+    -webkit-transform: translateX(4%);
+  }     
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+.selling-points .point h5 {
+  height: 25px;
+}
+
+}
